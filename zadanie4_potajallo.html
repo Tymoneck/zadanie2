@@ -1,0 +1,53 @@
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Sposoby podłączania styli do strony</h1>
+        <ol>
+            <li>
+                <h3>Lokalny arkusz stylów</h3>
+                <textarea cols="65" rows="12">
+&lt;head>
+    &lt;link rel="Stylesheet" type="text/css" href="style.css" />
+&lt;/head>
+                </textarea>
+            </li>
+            <li>
+                <h3>Styl lokalny</h3>
+                <textarea cols="65" rows="6">
+&lt;selektor style="cecha1: wartość1; cecha2: wartość2...">...</selektor>
+                </textarea>
+            </li>
+            <li>
+                <h3>Wewnętrzny arkusz stylów</h3>
+                <textarea cols="65" rows="15">
+&lt;head>
+    &lt;style type="text/css">
+    selektor1 { cecha: wartość; cecha2: wartość2... }
+    selektor2 { cecha: wartość; cecha2: wartość2... }
+&lt;style>
+                    </head>
+                </textarea>
+            </li>
+            <li>
+                <h3>Alternatywny arkusz stylów.</h3>
+                <textarea cols="65" rows="15">
+&lt;head>
+    &lt;link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" />
+    &lt;link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" />
+    &lt;link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" />
+ &lt;/head>
+                </textarea>
+            </li>
+            <li>
+                <h3>Import arkusza stylów.</h3>
+&lt;style type="text/css">
+    @import url(adres zewnętrznego arkusza stylów);
+&lt;/style>
+            </li>
+        </ol>
+
+    </body>
+</html>
