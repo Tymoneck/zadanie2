@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            p{
+                font: Arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Wewnętrzny arkusz stylów:</h1>
+        <ol>
+            <li><h1>Gdzie jest wstawiany?</h1>
+                <p>Wstawia się zawsze w części nagłówkowej dokumentu pomiędzy znacznikami &lthead> a &lt/head></p>
+            </li>
+            <li><h1>Składnia teoretyczna:</h1>
+                <textarea rows="12" cols="65">
+    <head>
+        (...)
+        <style type="text/css">
+            /* <![CDATA[ */
+            selektor1 { cecha: wartość; cecha2: wartość2... }
+            selektor2 { cecha: wartość; cecha2: wartość2... }
+            (...)
+            /* ]]> */
+        </style>
+        (...)
+    </head>     
+                </textarea>
+            </li>
+            <li><h1>Jakie mogą być selektory?</h1>
+                <p>Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka
+                    tabeli) i inne.</p>
+            </li>
+            <li><h1>Jakie mogą być cechy i wartości?</h1>
+                <p>Jako "cecha" (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty
+                    formatowania nam chodzi (opisane w kolejnych rozdziałach).
+                    Natomiast jako wyraz "wartość" wpisujemy dokładną wartość atrybutu.
+                    Zwróć uwagę, że jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy
+                    rozdzielone średnikami.
+                </p>
+            </li>
+        </ol>
+    </body>
+</html>
